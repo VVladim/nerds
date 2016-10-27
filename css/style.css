@@ -1,0 +1,94 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  font-weight: 400;
+  font-family: "Roboto", "Arial", sans-serif;
+  min-width: 1200px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eeeeee;
+  padding: 0;
+}
+html {
+  padding: 0;
+  margin: 0;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+   width: 880px;
+   margin-left: auto;
+  margin-right: auto;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 27px;
+  background: lightgray;
+  min-height: 300px;
+}
+.main-header .index-logo {
+  float: left;
+  margin-right: 164px;
+}
+.main-header .main-menu {
+   float: left;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   margin-top: 17px;
+
+}
+.main-menu li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+.main-menu li a {
+   display: block;
+   text-transform: uppercase;
+   font-size: 14px;
+   line-height: 30px;
+   font-weight: 500;
+   color: #000000;
+   text-decoration: none;
+   padding: 10px 20px;
+   /*background: yellow;*/
+}
+.cart-buy {
+   float: right;
+   width: 110px;
+   margin-top: 17px;
+}
+.cart-buy a {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  padding-right: 0;
+  position: relative;
+}
+.cart-buy a::before {
+  content: "";
+ position: absolute;
+ top: 16px;
+ left: 16px;
+ width: 15px;
+ height: 15px;
+ background: transparent url("../img/icon-basket.png") no-repeat;
+}
