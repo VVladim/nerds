@@ -35,6 +35,9 @@ html {
   background: lightgray;
   min-height: 300px;
 }
+.main-header {
+   margin-bottom: 70px;
+}
 .header-top .index-logo {
   float: left;
   margin-right: 164px;
@@ -153,7 +156,7 @@ html {
 .slide:nth-child(3) {
    background-image: url(../img/slide-robot.png);
    background-repeat: no-repeat;
-   background-position: 100% 10px;
+   background-position: 99% -8px;
 }
 
 .slide:nth-child(2) .slide-title {
@@ -199,7 +202,6 @@ html {
    text-decoration: none;
    /*text-align: center;*/
    border-radius: 3px;
-
 }
 #btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
@@ -215,3 +217,73 @@ html {
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
   background: #000000;
 }
+.services {
+  margin-bottom: 122px;
+}
+.services section {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-right: 80px;
+}
+.services section:last-child {
+   margin-right: 0;
+}
+.services img {
+   margin-bottom: 5px;
+}
+.services h2 {
+   font-size: 18px;
+   line-height: 30px;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+.services p {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.services .btn {
+  display: inline-block;
+   /*width: 240px;*/
+   padding: 10px 40px;
+   font-size: 12px;
+   line-height: 18px;
+   font-weight: 500;
+   color: #ffffff;
+   background-color: #fb565a;
+   text-transform: uppercase;
+   text-decoration: none;
+   /*text-align: center;*/
+   border-radius: 3px;
+}
+.phones .btn {
+   background-color: #00ca74;
+}
+.presentations .btn {
+   background-color: #efc84a;
+}
+.content {
+  float: left;
+   min-height: 100px;
+   width: 640px;
+}
+.sidebar {
+  margin-left: 640px;
+   background: green;
+   min-height: 100px;
+}
+.content-container .content-title {
+   width: 525px;
+   font-size: 36px;
+   line-height: 36px;
+   font-weight: 500;
+   color: #000000;
+}
+.content-container p {
+   width: 575px;
+   font-size: 16px;
+   line-height: 22px;
+}
+.content-container 
