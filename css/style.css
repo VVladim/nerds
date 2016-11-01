@@ -35,11 +35,11 @@ html {
   background: lightgray;
   min-height: 300px;
 }
-.main-header .index-logo {
+.header-top .index-logo {
   float: left;
   margin-right: 164px;
 }
-.main-header .main-menu {
+.header-top .main-menu {
    float: left;
    margin: 0;
    padding: 0;
@@ -91,4 +91,127 @@ html {
  width: 15px;
  height: 15px;
  background: transparent url("../img/icon-basket.png") no-repeat;
+}
+.header-top {
+  margin-bottom: 30px;
+}
+.slider {
+   position: relative;
+   width:880px;
+   height: 310px;
+   margin: 0 auto;
+}
+.slider-controls {
+   position: absolute;
+   left:50%;
+   bottom: 95px;
+   margin-left: -100px;
+   width: 200px;
+   height: 10px;
+   text-align: center;
+   /*border: 1px dotted black;*/
+   z-index: 1000;
+}
+.slider input[type="radio"] {
+  display: none;
+}
+.slider-controls label {
+   display: inline-block;
+   vertical-align: top;
+   margin: 0 3px;
+   width: 4px;
+   height:4px;
+   background-color: white;
+   border: 3px solid gray;
+   border-radius: 50%;
+   cursor: pointer;
+}
+.slider-controls .active {
+   background: #1c1c1c;
+}
+.slide {
+  display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   /*background: rgba(255, 255, 0, 0.1);*/
+}
+.slide:nth-child(1) {
+  /*display: block;*/
+   background-image: url(../img/slide-screens.png);
+   background-repeat: no-repeat;
+   background-position: 100% 10px;
+}
+.slide:nth-child(2) {
+   background-image: url(../img/slide-calculator.png);
+   background-repeat: no-repeat;
+   background-position: 100% 10px;
+}
+.slide:nth-child(3) {
+   background-image: url(../img/slide-robot.png);
+   background-repeat: no-repeat;
+   background-position: 100% 10px;
+}
+
+.slide:nth-child(2) .slide-title {
+  width: 467px;
+}
+.slide:nth-child(2) p {
+   width: 470px;
+}
+.slide:nth-child(3) .slide-title {
+  width: 280px;
+}
+.slide:nth-child(3) p {
+   width: 470px;
+}
+.slide-text {
+   width: 380px;
+   padding: 34px 0;
+   color: #283136;
+}
+.slide-title {
+   width: 250px;
+   font-size: 36px;
+   line-height: 36px;
+   font-weight: 500;
+   color: #000000;
+}
+.slide-text p {
+   font-size: 16px;
+   line-height: 22px;
+   font-weight: 500;
+   margin-bottom: 27px;
+}
+.slide .btn {
+  display: inline-block;
+   /*width: 240px;*/
+   padding: 10px 70px;
+   font-size: 12px;
+   line-height: 18px;
+   font-weight: 500;
+   color: #ffffff;
+   background-color: #fb565a;
+   text-transform: uppercase;
+   text-decoration: none;
+   /*text-align: center;*/
+   border-radius: 3px;
+
+}
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #000000;
 }
